@@ -31,3 +31,16 @@ function isPari(numero) {
     return numero % 2 === 0;
 }
   
+// Genera il numero casuale per il computer
+const numeroComputer = generaNumeroCasuale();
+  
+ // Calcola la somma dei due numeri
+const somma = numeroUtente + numeroComputer;
+  
+ // Verifica se la somma è pari o dispari e dichiara il vincitore
+if ((isPari(somma) && sceltaUtente.toLowerCase() === "pari") ||
+     (!isPari(somma) && sceltaUtente.toLowerCase() === "dispari")) {
+   console.log(`Hai vinto! La somma è ${somma}, ed è ${isPari(somma) ? 'pari' : 'dispari'}.`);
+} else {
+    console.log(`Hai perso! La somma è ${somma}, ed è ${isPari(somma) ? 'pari' : 'dispari'}.`);
+}
