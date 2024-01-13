@@ -1,3 +1,4 @@
+// ! parola palindroma
 // Chiedi all'utente di inserire una parola
 const parolaUtente = prompt("Inserisci una parola:");
 
@@ -13,3 +14,15 @@ if (isPalindroma(parolaUtente)) {
 } else {
   console.log("La parola inserita non è palindroma.");
 }
+
+// ! pari o dispari
+
+// L'utente sceglie pari o dispari e inserisce un numero da 1 a 5
+const sceltaUtente = prompt("Scegli pari o dispari:");
+const numeroUtente = parseInt(prompt("Inserisci un numero da 1 a 5:"));
+
+// Funzione per generare un numero casuale da 1 a 5
+function generaNumeroCasuale() {
+  return Math.floor(Math.random() * 5) + 1;
+}
+
