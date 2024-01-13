@@ -26,3 +26,8 @@ function generaNumeroCasuale() {
   return Math.floor(Math.random() * 5) + 1;
 }
 
+// Funzione per determinare se un numero è pari o dispari
+function isPari(numero) {
+    return numero % 2 === 0;
+}
+  
